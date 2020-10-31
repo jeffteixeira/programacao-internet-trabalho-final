@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ConnectedIn</title>
+    <link href="{% static 'styles/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/signin.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/main.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header" >
+        <ul class="nav nav-pills pull-right" >
+            <li class="" > <a href="{% url 'login' %}">Login</a> </li>
+            <li class="" > <a href="{% url 'registrar' %}">Registrar-se</a> </li>
+        </ul>
+        <h3> <a href="{% url 'index' %}">ConnectedIn</a> </h3>
+    </div>
+    <div class="container">
+        {% block body %}
+        {% endblock %}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+connectedin/__pycache__/
+perfis/__pycache__/
+usuarios/__pycache__/
+db.sqlite3
+perfis/migrations/
+usuarios/migrations/

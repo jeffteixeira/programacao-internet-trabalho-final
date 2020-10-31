@@ -1,0 +1,40 @@
+.post {
+    /* background-color: red; */
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.post .autor {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.post .data {
+    /* margin-bottom: 10px; */
+    display: block;
+    font-weight: bold;
+    font-size: 0.875em;
+    margin-bottom: 10px;
+}
+
+.timeline-bg {
+    background-color: #f5f5f5;
+}
+
+.form-post {
+    max-width: 450px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  .form-post textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      resize: none;
+      border-radius: 5px;
+  }

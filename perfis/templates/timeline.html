@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="col-lg-12">
+    {% if messages %}
+        {% for message in messages %}
+            <div {% if message.tags %} class="alert alert-warning {{ message.tags }}"{% endif %} role="alert">
+                <strong>{{ message }}</strong>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <div class="panel panel-default timeline-bg">
+        <div class="panel-heading">
+            <strong>{{titulo}}</strong>
+        </div>
+
+        {%  for postagem in postagens  %}
+            <div class="post" >
+                <span class="autor" >{{ postagem.perfil.nome }}</span>
+                <p>{{ postagem.texto }}</p>
+                <span class="data" >{{ postagem.created_at | date }}</span>
+                <a class="btn btn-primary" href="">Ver perfil</a>
+            </div>
+        {% empty %}
+        <div class="post" >
+            <p>Nenhuma postagem encontrada</p>
+        </div>
+        {%  endfor %}
+    </div>
+</div>
+{% endblock %}
